@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/main.css">
+    <title>Schere Stein Papier</title>
+</head>
+<body>
+<section>
+    <h2>How many rounds do you wanna play? <br> MAKE YOUR CHOICE</h2>
+</section>
+<section>
+    <div class="grid-container">
+        <article>
+            <label class="itemL" for="radio">3</label>
+            <input name="choices" class="item" type="radio" value="3">
+        </article>
+        <article>
+            <label class="itemL" for="radio">6</label>
+            <input name="choices" class="item" type="radio" value="6">
+        </article>
+        <article>
+            <label class="itemL" for="radio">9</label>
+            <input name="choices" class="item" type="radio" value="9">
+        </article>
+        <article>
+            <label class="itemL" for="radio">12</label>
+            <input name="choices" class="item" type="radio" value="12">
+        </article>
+    </div>
+</section>
+
+    <div class="selections">
+        <button class="selection" id="rock" name="👊" >👊</button>
+        <button class="selection" id="paper" name="✋">✋</button>
+        <button class="selection" id="scissors" name="✌️">✌️</button>
+    </div>
+
+    <section class="results">
+        <article id="you">
+            You
+            <span id="result-scoreYou" class="result-score">0</span>
+        </article>
+        <article>
+        <p><span id="current-round"></span>/<span id="set-round"></span></p>
+        </article>
+        <article id="comp">
+            Computer
+            <span id="result-scoreComp" class="result-score">0</span>
+        </article>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
